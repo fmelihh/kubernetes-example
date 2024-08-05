@@ -12,3 +12,9 @@ kubectl edit deployment nginx-depl
 kubectl logs "pod name"
 <br>
 kubectl describe pod "pod name"
+<br>
+kubectl exec -it "pod name" -- bin/bash
+<br>
+kubectl delete deployment "deployment name"
+<br>
+kubectl apply -f config-file.yaml
