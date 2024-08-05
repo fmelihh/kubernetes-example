@@ -18,3 +18,5 @@ kubectl exec -it "pod name" -- bin/bash
 kubectl delete deployment "deployment name"
 <br>
 kubectl apply -f config-file.yaml
+<br>
+kubectl get deployment nginx-deployment2 -o yaml
