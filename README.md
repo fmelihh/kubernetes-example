@@ -19,6 +19,8 @@ kubectl get all | grep mongodb
 minikube service mongo-express-service
 kubectl get namespace
 kubectl create namespace my-namespace
+kubectl get configmap -o yaml (namespace info)
+kubectl apply -f mysql-configmap.yaml --namespace=my-namespace (or define inse the metadata attribute in yaml files.)
 ````
 ## Kubernetes Namespaces Notes
 ````
@@ -26,4 +28,11 @@ kubectl create namespace my-namespace
 2-) Avoid conflicts between teams
 3-) Share services between different environments
 4-) Access and Resource Limits on namespace level
+5-) each ns must define own configmap and secrets
+6-) accessing service in another namespace: mysql-service.namespace 
+
+by default components are created in a default ns
+
+kubectx -> set default name space and avoid adding -n on every command.
+
 ````
