@@ -36,3 +36,10 @@ by default components are created in a default ns
 kubectx -> set default name space and avoid adding -n on every command.
 
 ````
+## Kubernetes Ingress Notes
+````
+minikube addons enable ingress
+(k8s ngnix ingress controller)
+
+kubectl get pod -n kube-system --> nginx ingresses
+````

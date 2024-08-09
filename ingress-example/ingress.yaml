@@ -7,6 +7,23 @@ spec:
     - host: myapp.com
       http:
         paths:
-          - backend:
+        - path: /analytics
+          backend:
+            serviceName: myapp-internal-service
+            servicePort: 8080
+        - path: /shopping
+          backend:
+            serviceName: myapp-internal-service2
+            servicePort: 8181
+
+    - host: myapp.com
+      http:
+        paths:
+          - path: /analytics
+            backend:
               serviceName: myapp-internal-service
               servicePort: 8080
+          - path: /shopping
+            backend:
+              serviceName: myapp-internal-service2
+              servicePort: 8181
