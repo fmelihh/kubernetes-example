@@ -30,3 +30,5 @@ kubectl get pod --watch
 kubectl get pod -o wide
 <br>
 kubectl get all | grep mongodb
+<br>
+minikube service mongo-express-service
