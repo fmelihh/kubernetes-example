@@ -20,3 +20,13 @@ kubectl delete deployment "deployment name"
 kubectl apply -f config-file.yaml
 <br>
 kubectl get deployment nginx-deployment2 -o yaml
+<br>
+kubectl delete --all <pods,deployments,services.. etc>
+<br>
+kubectl get secret
+<br>
+kubectl get pod --watch
+<br>
+kubectl get pod -o wide
+<br>
+kubectl get all | grep mongodb
