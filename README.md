@@ -21,6 +21,7 @@ kubectl get namespace
 kubectl create namespace my-namespace
 kubectl get configmap -o yaml (namespace info)
 kubectl apply -f mysql-configmap.yaml --namespace=my-namespace (or define inse the metadata attribute in yaml files.)
+minikube service go-backend-service --url (for service url)
 ````
 ## Kubernetes Namespaces Notes
 ````
